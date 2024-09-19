@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <style>
+        body {
+            background-image: url('https://cdn.pixabay.com/photo/2022/11/28/23/28/mountains-7623362_1280.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                background-image: url('https://img.freepik.com/free-photo/grassy-field-near-grassy-mountain-cloudy-sky_181624-20132.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1726704000&semt=ais_hybrid');
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            body {
+                background-image: url('https://mrwallpaper.com/images/high/white-flower-hd-nature-phone-crc6wbps716kczc6.jpg');
+            }
+        }
+
+        .form-container {
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input {
+            background-color: rgb(207, 207, 207);
+            border: 3px solid black;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 100%;
+            max-width: 300px;
+        }
+
+        button {
+            background-color: bisque;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: bisque;
+            margin-bottom: 20px;
+        }
+
+        label {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>LOGIN PAGE</h1>
+        <form>
+            <label for="firstname">Firstname:</label>
+            <input type="text" id="firstname" name="firstname" required><br>
+            
+            <label for="lastname">Lastname:</label>
+            <input type="text" id="lastname" name="lastname" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
